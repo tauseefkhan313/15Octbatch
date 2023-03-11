@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserTestingSuite">
+  <test thread-count="5" name="Test">
+	  <parameter name="browserName" value="Firefox"></parameter>
+    <classes>
+      <class name="com.saucedemo.TESTPACK.Tc01VerifyLoginFunctionality"/>
+      <class name="com.saucedemo.TESTPACK.Tc02VerifyLogOutFunctionaltiy"/>
+      <class name="com.saucedemo.TESTPACK.Tc03VerifyBagProdAddToCartFunctionality"/>
+      <class name="com.saucedemo.TESTPACK.Tc04VerifyAllProdAddToCartFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
